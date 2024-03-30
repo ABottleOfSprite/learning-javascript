@@ -1,0 +1,3 @@
+[submodule "project-2"]
+	path = project-2
+	url = https://github.com/ABottleOfSprite/learning-javascript.git
