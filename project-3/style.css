@@ -1,0 +1,133 @@
+:root {
+  --clr-light: #d3d3d3;
+  --clr-dark: #0b090a;
+  --clr-dark-red: #660708;
+  --clr-red: #ba181b;
+  --clr-gray: #b1a7a6;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  font-family: "Geist Mono", monospace;
+}
+
+body {
+  background-color: var(--clr-dark);
+}
+
+#mySubmit {
+  padding: 0.25rem 1.5rem;
+  border-radius: 1.5em;
+  background-color: var(--clr-red);
+  border: 1px solid var(--clr-gray);
+  color: var(--clr-light);
+  transition: all 450ms ease-in-out;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#mySubmit:hover {
+  scale: 1.05;
+  background-color:  var(--clr-dark-red);
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-gray);
+  gap: 1rem;
+}
+
+label,
+.paypal-container,
+.mastercard-container,
+.visa-container,
+#mySubmit,
+#myCheckBox,
+.container {
+  user-select: none;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+p {
+  user-select: text;
+  font-size: 0.8rem;
+  padding-left: 8em;
+  padding-right: 8em;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: var(--clr-light);
+}
+
+input:checked ~ label {
+  color: var(--clr-dark-red);
+
+}
+
+input {
+  display: none;
+}
+
+#info {
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  color: var(--clr-red);
+  text-align: center;
+  display: block;
+  animation: hide 450ms ease-out 10s 1 forwards;
+  animation: glow 3s alternate-reverse2s infinite;
+  opacity: 1;
+  transition: all 450ms ease-in-out;
+  user-select: none;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#subText {
+  color: var(--clr-gray);
+  font-size: inherit;
+
+  
+}
+
+@keyframes glow {
+  0%, 40%, 75%, 100% {
+    filter: none;
+  }
+
+  50% {
+    filter: brightness(5);
+  }
+
+}
+
+.subscribe-container {
+  padding: 0.2rem 3rem;
+  border-radius: 3rem;
+  background-color: #b1a7a61e;
+}

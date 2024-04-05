@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <div class="container">
+    <div id="info">
+      Select <strong id="subText">'Subscribe'</strong>, and choose a payment method!
+    </div>
+    <div class="subscribe-container">
+      <input type="checkbox" id="myCheckBox">
+      <label for="myCheckBox">Subscribe</label>
+    </div>
+
+    <div class="visa-container">
+      <input type="radio" id="visaBtn" name="card">
+      <label for="visaBtn">Visa</label><br>
+    </div>
+
+    <div class="mastercard-container">
+      <input type="radio" id="masterCardBtn" name="card">
+      <label for="masterCardBtn">MasterCard</label><br>
+    </div>
+
+    <div class="paypal-container">
+      <input type="radio" id="payPalBtn" name="card">
+      <label for="payPalBtn">PayPal</label><br>
+    </div>
+
+    <button type="submit" id="mySubmit">Submit</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
