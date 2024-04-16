@@ -1,0 +1,239 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0c0c0c;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#submitButton {
+  font-size: 1.5rem;
+  padding: 0.3rem 1.8rem;
+  border-radius: 8rem;
+  border: none;
+  background-color: #EAFF00;
+  font-weight: 800;
+  transition: all 300ms ease-in-out;
+}
+
+#submitButton:hover {
+  box-shadow: 0em 0em 0.8em 0.1em #EAFF00;
+  scale: 1.05;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+
+#textBox {
+  background-color: rgba(128, 128, 128, 0.048);
+  padding: 0.1em 1.8em;
+  width: 40%;
+  color: wheat;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 1em;
+  text-align: center;
+  
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+#textBox:focus {
+  outline-color: #EAFF00;
+  outline-style: dashed;
+  border-color: transparent;
+}
+
+label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+div input {
+  display: none;
+}
+
+input:checked ~ label{
+  color: #EAFF00;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #0C0C0C;
+  padding-top:4rem;
+  padding-bottom:4rem;
+  padding-left: 1rem;
+  padding-right:1rem;
+}
+
+#result {
+  color: #1AC8ED;
+  transition: all 850ms ease-in-out;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+  #textBox {
+    font-size: 1.8rem;
+  }
+  label {
+    font-size: 1.6rem;
+  }
+  #submitButton {
+    font-size: 2rem;
+  }
+  #result {
+    font-size: 1.4rem;
+  }
+  .container{
+    gap: 2.5rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  #textBox {
+    font-size: 2.2rem;
+  }
+  .container{
+    gap: 1.4rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  label {
+    font-size: 2.4rem;
+  }
+  #submitButton {
+    font-size: 3rem;
+  }
+  #result {
+    font-size: 2rem;
+  }
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+.container {
+    max-width: 1280px;
+  }
+  #textBox {
+    font-size: 2.5rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+.container {
+    max-width: 1536px;
+  }
+  #textBox {
+    font-size: 3rem;
+  }
+  label {
+    font-size: 2.8em;
+  }
+
+  #submitButton {
+    font-size: 3.4rem;
+  }
+  #result {
+    font-size: 2rem;
+  }
+  .container{
+    gap: 4.4rem;
+  }
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+
+} */
+
+/* lg */
+/* @media (min-width: 1024px) {
+} */
+
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */
